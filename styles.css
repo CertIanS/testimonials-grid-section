@@ -22,3 +22,31 @@ h2, p{
 .kira{
     background-color: hsl(0, 0%, 100%);
 }
+@media screen and (min-width: 375px) {  
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .daniel{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .jeanette{
+        grid-column-start: 1;
+    }
+    .patrick{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    .kira{
+        grid-column-start: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+}
