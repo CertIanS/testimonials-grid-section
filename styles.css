@@ -1,13 +1,17 @@
 h2, p{
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
+p{
+    line-height: 1.5;
+}
 img{
     border-radius: 50%;
+    margin-right: 15px;
 }
-.danielName, .jonathanName, .jeanetteName, .patrickName, .kiraName{
+/*.danielName, .jonathanName, .jeanetteName, .patrickName, .kiraName{
     font-size: 20px;
     font-weight: 600;
-}
+}*/
 .danielImg{
     border: 3px solid hsl(264, 82%, 80%);
 }
@@ -16,8 +20,8 @@ img{
 }
 .daniel, .jonathan ,.jeanette, .patrick, .kira{
     border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
+    padding: 20px;
+    margin: 20px;
 }
 .daniel{
     background-color: hsl(263, 55%, 52%);
@@ -31,6 +35,7 @@ img{
 }
 .jeanette{
     background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%)
 }
 .patrick{
     background-color: hsl(219, 29%, 14%);
@@ -38,6 +43,11 @@ img{
 }
 .kira{
     background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%)
+}
+.danielSpan, .jonSpan, .jeanSpan, .patSpan, .kiraSpan{
+    display: flex;
+    align-items: center;
 }
 @media screen and (min-width: 375px) {  
     .container{
@@ -49,6 +59,7 @@ img{
     .grid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 85%;
     }
     .daniel{
         grid-column-start: 1;
